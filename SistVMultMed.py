@@ -59,6 +59,13 @@ class sistemaV:
                 return True
         #solo luego de haber recorrido todo el ciclo se retorna False
         return False
+    
+    def verificarExisteM(self,medicamento):
+        for n in self.__lista_medicamentos:
+            if medicamento == n.verLista_medicamentos():
+                return True
+        return False
+
         
     def verNumeroMascotas(self):
         return len(self.__lista_mascotas) 
